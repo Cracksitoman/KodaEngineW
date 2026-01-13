@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Koda Engine | Crea tu propio mundo</title>
     <meta name="description" content="Herramienta de creación de videojuegos 2D sencilla y potente.">
+    <!-- Tailwind CSS (CDN para simplicidad en este setup) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Babel Standalone para compilar JSX/TSX en el navegador -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
       
@@ -45,18 +44,19 @@
   <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/client": "https://esm.sh/react-dom@^19.2.3/client",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+    "react": "https://esm.sh/react@^19.2.3",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
   }
 }
 </script>
 </head>
   <body>
     <div id="root"></div>
-    <!-- Cambiamos type a text/babel y añadimos presets para que entienda React y TypeScript -->
-    <script type="text/babel" data-type="module" data-presets="typescript,react" src="./index.tsx"></script>
+    <!-- Vite inyectará el script procesado aquí automáticamente -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
