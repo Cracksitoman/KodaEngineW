@@ -1,11 +1,11 @@
 import React from 'react';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { Features } from './components/Features';
-import { BetaWarning } from './components/BetaWarning';
-import { EditorPreview } from './components/EditorPreview';
-import { Roadmap } from './components/Roadmap';
-import { Footer } from './components/Footer';
+import { Navbar } from './components/Navbar.tsx';
+import { Hero } from './components/Hero.tsx';
+import { Features } from './components/Features.tsx';
+import { BetaWarning } from './components/BetaWarning.tsx';
+import { EditorPreview } from './components/EditorPreview.tsx';
+import { Roadmap } from './components/Roadmap.tsx';
+import { Footer } from './components/Footer.tsx';
 
 const App: React.FC = () => {
   return (
