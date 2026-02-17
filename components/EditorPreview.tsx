@@ -10,7 +10,7 @@ export const EditorPreview: React.FC = () => {
             <div className="w-3 h-3 rounded-full bg-red-500"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
             <div className="w-3 h-3 rounded-full bg-green-500"></div>
-            <div className="ml-4 text-xs text-slate-400 font-mono">Koda Engine - Project: MyFirstRPG</div>
+            <div className="ml-4 text-xs text-slate-400 font-mono">Koda Engine Lite - Project: MyFirstRPG</div>
           </div>
 
           {/* Mock Editor Content */}

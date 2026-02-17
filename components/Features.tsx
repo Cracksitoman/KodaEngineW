@@ -20,7 +20,7 @@ const featureList = [
   {
     icon: <Terminal className="w-6 h-6 text-pink-400" />,
     title: "También con Scripts",
-    description: "¿Prefieres escribir código? Koda Engine permite scripting para comportamientos avanzados y personalizados."
+    description: "¿Prefieres escribir código? Koda Engine Lite permite scripting para comportamientos avanzados y personalizados."
   },
   {
     icon: <Grid className="w-6 h-6 text-orange-400" />,

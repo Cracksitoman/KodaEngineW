@@ -17,42 +17,37 @@ export const Hero: React.FC = () => {
 
         <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-indigo-100 to-indigo-300 tracking-tight mb-6 leading-tight">
           Crea Videojuegos 2D <br />
-          <span className="text-indigo-500">Con Bloques o Código</span>
+          <span className="text-indigo-500">Koda Engine Lite</span>
         </h1>
 
         <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-400 mb-10">
-          <strong className="text-white">Koda Engine</strong> hace fácil lo difícil. 
+          <strong className="text-white">Koda Engine Lite</strong> hace fácil lo difícil. 
           Utiliza nuestro sistema visual de <strong>bloques</strong> para empezar, o escribe scripts completos si buscas más control.
-          Similar a Game Maker, pero simplificado.
+          Tu estudio de videojuegos en el navegador.
         </p>
 
         <div className="flex flex-col items-center gap-6">
-          {/* Botones Principales */}
+          {/* Botón Principal (Web) */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
             <a 
-              href="https://www.mediafire.com/file/brdgsvzlbvrvcti/KodaEngineBeta.apk/file"
+              href="https://kodaenginelite.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold text-lg shadow-[0_0_20px_rgba(79,70,229,0.3)] hover:shadow-[0_0_30px_rgba(79,70,229,0.5)] transition-all flex items-center justify-center gap-3 group"
+              className="w-full sm:w-auto px-10 py-5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold text-lg shadow-[0_0_20px_rgba(79,70,229,0.3)] hover:shadow-[0_0_30px_rgba(79,70,229,0.5)] transition-all flex items-center justify-center gap-3 group"
             >
-              <Smartphone className="w-6 h-6" />
-              <span>Descargar Android</span>
+              <Globe className="w-6 h-6" />
+              <span>Abrir Editor Web</span>
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-            </a>
-            
-            <a 
-              href="https://kodaengines.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-bold text-lg border border-slate-700 transition-all flex items-center justify-center gap-3"
-            >
-              <Globe className="w-6 h-6 text-indigo-400" />
-              <span>Probar en Web</span>
             </a>
           </div>
 
           {/* Botones Futuros / Deshabilitados */}
-          <div className="flex flex-wrap justify-center gap-4 mt-2">
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
+            <div className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/5 border border-white/5 text-slate-500 cursor-not-allowed select-none group relative overflow-hidden">
+               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              <Smartphone size={18} />
+              <span className="font-medium text-sm">Android (Próximamente)</span>
+            </div>
             <div className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/5 border border-white/5 text-slate-500 cursor-not-allowed select-none">
               <Apple size={18} />
               <span className="font-medium text-sm">iOS (Próximamente)</span>

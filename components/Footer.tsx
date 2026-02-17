@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
                   <text x="50%" y="50%" dy=".35em" textAnchor="middle" fontSize="350" fontWeight="900" fill="black" fontFamily="system-ui, sans-serif">K</text>
                 </svg>
               </div>
-              <span className="font-bold text-xl text-white">Koda Engine</span>
+              <span className="font-bold text-xl text-white">Koda Engine Lite</span>
             </div>
             <p className="text-slate-400 max-w-sm mb-6">
               Democratizando la creación de videojuegos con programación por bloques. 
@@ -34,8 +34,8 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-bold mb-4">Producto</h4>
             <ul className="space-y-2 text-sm text-slate-400">
-              <li><a href="https://www.mediafire.com/file/brdgsvzlbvrvcti/KodaEngineBeta.apk/file" target="_blank" className="hover:text-indigo-400">Descargar APK</a></li>
-              <li><a href="https://kodaengines.vercel.app/" target="_blank" className="hover:text-indigo-400">Probar Web</a></li>
+              <li><a href="https://kodaenginelite.vercel.app/" target="_blank" className="hover:text-indigo-400">Abrir Editor Web</a></li>
+              <li><span className="text-slate-600 cursor-not-allowed">Descargar App (Pronto)</span></li>
               <li><a href="#" className="hover:text-indigo-400">Tutoriales</a></li>
               <li><a href="#" className="hover:text-indigo-400">Changelog</a></li>
             </ul>
@@ -53,7 +53,7 @@ export const Footer: React.FC = () => {
 
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-600 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Koda Engine. Todos los derechos reservados.
+            © {new Date().getFullYear()} Koda Engine Lite. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-2 text-xs text-slate-600">
             <span className="w-2 h-2 rounded-full bg-green-500"></span>

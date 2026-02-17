@@ -21,7 +21,7 @@ export const BetaWarning: React.FC = () => {
             
             <div className="space-y-4 text-slate-300 leading-relaxed">
               <p>
-                <strong>Koda Engine</strong> es actualmente una herramienta en desarrollo. 
+                <strong>Koda Engine Lite</strong> es actualmente una herramienta en desarrollo. 
                 Queremos ser totalmente transparentes contigo:
               </p>
               <ul className="list-disc list-inside space-y-1 ml-2 text-slate-400 text-sm">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Github } from 'lucide-react';
+import { Menu, X, Github, Globe } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
             
             <div className="flex flex-col">
               <span className="font-bold text-xl tracking-tight text-white leading-none">
-                KODA <span className="text-indigo-400">ENGINE</span>
+                KODA <span className="text-indigo-400">LITE</span>
               </span>
               <span className="text-[10px] font-mono text-slate-400 leading-none mt-1">
                 BETA v0.1.0
@@ -48,12 +48,13 @@ export const Navbar: React.FC = () => {
                 GitHub
               </a>
               <a 
-                href="https://www.mediafire.com/file/brdgsvzlbvrvcti/KodaEngineBeta.apk/file"
+                href="https://kodaenginelite.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg text-sm font-bold shadow-lg shadow-indigo-500/30 transition-all transform hover:scale-105"
+                className="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg text-sm font-bold shadow-lg shadow-indigo-500/30 transition-all transform hover:scale-105 flex items-center gap-2"
               >
-                Descargar Beta
+                <Globe size={16} />
+                Abrir Editor Web
               </a>
             </div>
           </div>
@@ -78,12 +79,13 @@ export const Navbar: React.FC = () => {
             <a href="#preview" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Galería</a>
             <a href="#roadmap" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Futuro</a>
             <a 
-              href="https://www.mediafire.com/file/brdgsvzlbvrvcti/KodaEngineBeta.apk/file"
+              href="https://kodaenginelite.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full text-left bg-indigo-600 text-white block px-3 py-2 rounded-md text-base font-medium mt-4"
+              className="w-full text-left bg-indigo-600 text-white block px-3 py-2 rounded-md text-base font-medium mt-4 flex items-center gap-2"
             >
-              Descargar Beta
+              <Globe size={16} />
+              Abrir Editor Web
             </a>
           </div>
         </div>
